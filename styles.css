@@ -1,76 +1,93 @@
-/* Base Reset */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body, html {
-  height: 100%;
-  font-family: 'Inter', sans-serif;
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f8ff;
+}
+/* Header Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4d47ff;
+}
+
+.nav-menu {
+    display: none;
+}
+
+.nav-button {
+    background-color: #4d47ff;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #3b35cc;
 }
 
 /* Hero Section */
 .hero {
-  background: url('/media/hero.png') center/cover no-repeat;
-  height: 100vh;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px 8%;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 2;
-}
-
-.logo {
-  font-size: 24px;
-  font-weight: 700;
-  color: #4a3aff;
-}
-
-.btn {
-  background-color: #4a3aff;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-  box-shadow: 2px 2px 0 #372cff;
-  transition: all 0.2s ease;
-}
-
-.btn:hover {
-  background-color: #372cff;
-}
-
-/* Centered Hero Content */
-.hero-content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 0 20px;
-  z-index: 1;
+    background-image: url("/media/hero.png");
+    background-size: cover;
+    background-position: center;
+    background-color: #f5f8ff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
 }
 
 .hero-content h1 {
-  font-size: 42px;
-  font-weight: 800;
-  margin-bottom: 30px;
-  color: #111;
+    color: #252432;
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: bold;
 }
 
-.main-btn {
-  padding: 12px 28px;
-  font-size: 16px;
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.cta-button {
+    background-color: #4d47ff;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #3b35cc;
 }
