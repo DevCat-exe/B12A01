@@ -1,0 +1,76 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Hero Section */
+.hero {
+  background: url('/media/hero.png') center/cover no-repeat;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 8%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #4a3aff;
+}
+
+.btn {
+  background-color: #4a3aff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 2px 2px 0 #372cff;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #372cff;
+}
+
+/* Centered Hero Content */
+.hero-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  z-index: 1;
+}
+
+.hero-content h1 {
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 30px;
+  color: #111;
+}
+
+.main-btn {
+  padding: 12px 28px;
+  font-size: 16px;
+}
